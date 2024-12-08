@@ -1,0 +1,32 @@
+.top-recipes {
+	text-align: center;
+	padding: 50px 10%;
+	background: #00236D;
+	color: white;
+}
+
+.top-recipes h2 {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 58.51px;
+}
+
+.recipe-grid {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+.recipe-card {
+	background: white;
+	color: #00236D;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+	width: 100%;
+	border-radius: 10px;
+}

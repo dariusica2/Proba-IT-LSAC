@@ -5,6 +5,7 @@ import Recipes from "./pages/Recipes";
 import AddRecipe from "./pages/AddRecipe";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ForgotPassword from "./pages/ForgotPassword";
 
 const App = () => {
 	return (
@@ -17,6 +18,7 @@ const App = () => {
 					<Route path="/add-recipe" element={<AddRecipe />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Register />} />
+					<Route path="/forgot-password" element={<ForgotPassword />} />
 				</Routes>
 			</div>
 		</Router>

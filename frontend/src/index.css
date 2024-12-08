@@ -1,4 +1,5 @@
 /* General Reset */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,4 +8,14 @@
 
 a {
 	text-decoration: none;
+}
+
+body {
+	background: url('assets/images/sign_in_background.svg') no-repeat center top;
+	background-size: cover; /* Makes the background image cover the entire container */
+  	background-attachment: fixed; /* Makes the background static (doesn't scroll with content) */
+	background-position: absolute;
+  	min-height: 100vh; /* Ensures the background covers the full viewport height */
+  	margin: 0; /* Removes default margin to ensure the background fills the page */
+	font-family: 'Montserrat', sans-serif;
 }
