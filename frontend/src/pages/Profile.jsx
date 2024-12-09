@@ -1,46 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+import ProfileCard from "../components/ProfileCard";
+import UserDetailForm from "../components/UserDetailsForm";
 
 import "../components/styles/Login.css";
 
-import logo from "../assets/images/sign_in_chef_IT_logo.svg";
-import homelogo from "../assets/images/home_chef_IT_logo.svg";
+const Profile = () => {
+	const navigate = useNavigate()
 
+    const addRecipeClick = () => {
+        navigate("/add-recipe")
+    };
 
-const Login = () => {
 	return (
-		<div className="login-container">
-
-			<header className="login-header">
-				<div className="logo">
-					<Link to="/">
-						<img src={logo} alt="Logo" />
-					</Link>
-				</div>
-
-  				<nav className="navbar">
-					<div className="nav-left">
-	  					<a href="/recipes">Recipes</a>
-	  					<a href="/add-recipe">Add Recipe</a>
-			  		</div>
-
-			  		<div className="nav-right">
-						<div className="login-button-border">
-	  						<a href="/login">Login</a>
-						</div>
-	  					<a href="/register">Register</a>
-			  		</div>
-  		  		</nav>
-			</header>
-
-	  		<main className="home-main">
-				<div className="home-logo">
-					<img src={homelogo} alt="Home Logo" />
-				</div>
-	  		</main>
-
+		<div className="app-container">
+			<div className="content-container">
+				<ProfileCard />
+				<UserDetailForm />
+			</div>
+			<button className="add-recipe-btn" onClick={addRecipeClick}>Add a recipe</button>
 		</div>
  	);
 };
 
-export default Login;
+export default Profile;

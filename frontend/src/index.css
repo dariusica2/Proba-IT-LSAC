@@ -19,3 +19,26 @@ body {
   	margin: 0; /* Removes default margin to ensure the background fills the page */
 	font-family: 'Montserrat', sans-serif;
 }
+
+.app-container {
+	width: 100%;
+	text-align: center;
+	padding-top: 15%;
+  }
+  
+  .content-container {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px;
+  }
+  
+  .add-recipe-btn {
+	background-color: #28a745;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 20px;
+	border-radius: 5px;
+  }

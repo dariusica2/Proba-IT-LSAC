@@ -1,0 +1,16 @@
+.profile-card {
+	background-color: #00236D;
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	width: 513px;
+	height: 250px;
+}
+	
+.profile-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
